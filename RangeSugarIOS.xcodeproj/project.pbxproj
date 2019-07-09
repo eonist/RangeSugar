@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		F1D81BFD22D484F2008F842A /* RangeSugarIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D81BFB22D484F2008F842A /* RangeSugarIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1D81C0722D48556008F842A /* RangeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D81C0422D48556008F842A /* RangeExtensions.swift */; };
-		F1D81C0822D48556008F842A /* RangeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D81C0522D48556008F842A /* RangeParser.swift */; };
-		F1D81C0922D48556008F842A /* RangeAsserter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D81C0622D48556008F842A /* RangeAsserter.swift */; };
+		F1D81C0F22D486E3008F842A /* RangeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D81C0C22D486E3008F842A /* RangeExtensions.swift */; };
+		F1D81C1022D486E3008F842A /* RangeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D81C0D22D486E3008F842A /* RangeParser.swift */; };
+		F1D81C1122D486E3008F842A /* RangeAsserter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D81C0E22D486E3008F842A /* RangeAsserter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1D81BF822D484F2008F842A /* RangeSugarIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RangeSugarIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D81BFB22D484F2008F842A /* RangeSugarIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangeSugarIOS.h; sourceTree = "<group>"; };
 		F1D81BFC22D484F2008F842A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1D81C0422D48556008F842A /* RangeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeExtensions.swift; sourceTree = "<group>"; };
-		F1D81C0522D48556008F842A /* RangeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeParser.swift; sourceTree = "<group>"; };
-		F1D81C0622D48556008F842A /* RangeAsserter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeAsserter.swift; sourceTree = "<group>"; };
+		F1D81C0C22D486E3008F842A /* RangeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeExtensions.swift; sourceTree = "<group>"; };
+		F1D81C0D22D486E3008F842A /* RangeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeParser.swift; sourceTree = "<group>"; };
+		F1D81C0E22D486E3008F842A /* RangeAsserter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeAsserter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 		F1D81BEE22D484F2008F842A = {
 			isa = PBXGroup;
 			children = (
-				F1D81C0322D48556008F842A /* src */,
+				F1D81C0B22D486E3008F842A /* src */,
 				F1D81BFA22D484F2008F842A /* RangeSugarIOS */,
 				F1D81BF922D484F2008F842A /* Products */,
 			);
@@ -59,15 +59,14 @@
 			path = RangeSugarIOS;
 			sourceTree = "<group>";
 		};
-		F1D81C0322D48556008F842A /* src */ = {
+		F1D81C0B22D486E3008F842A /* src */ = {
 			isa = PBXGroup;
 			children = (
-				F1D81C0422D48556008F842A /* RangeExtensions.swift */,
-				F1D81C0522D48556008F842A /* RangeParser.swift */,
-				F1D81C0622D48556008F842A /* RangeAsserter.swift */,
+				F1D81C0C22D486E3008F842A /* RangeExtensions.swift */,
+				F1D81C0D22D486E3008F842A /* RangeParser.swift */,
+				F1D81C0E22D486E3008F842A /* RangeAsserter.swift */,
 			);
-			name = src;
-			path = ../src;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +91,7 @@
 				F1D81BF422D484F2008F842A /* Sources */,
 				F1D81BF522D484F2008F842A /* Frameworks */,
 				F1D81BF622D484F2008F842A /* Resources */,
+				F1D81C0A22D486CB008F842A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -143,14 +143,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F1D81C0A22D486CB008F842A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1D81BF422D484F2008F842A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1D81C0822D48556008F842A /* RangeParser.swift in Sources */,
-				F1D81C0922D48556008F842A /* RangeAsserter.swift in Sources */,
-				F1D81C0722D48556008F842A /* RangeExtensions.swift in Sources */,
+				F1D81C1022D486E3008F842A /* RangeParser.swift in Sources */,
+				F1D81C1122D486E3008F842A /* RangeAsserter.swift in Sources */,
+				F1D81C0F22D486E3008F842A /* RangeExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

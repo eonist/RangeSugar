@@ -2,14 +2,14 @@
  * - NOTE: Swift has some of these methods built in but its nice to have them in one place, and also so that you can create other methods with similar DNA
  * - Fixme: Look up Strideable when you need to impliment distatnceTo and advanceBy or even difference
  */
-class RangeParser {
+public class RangeParser {
     /**
      * Returns the minimum or smallest value in the range.
      */
     public static func min<T>(_ range: Range<T>) -> T {
         return Swift.min(range.start, range.end)
     }
-    public static func describe<T>(_ range:Range<T>) {
+    public static func describe<T>(_ range: Range<T>) {
         Swift.print("range.start: " + "\(range.start)")
         Swift.print("range.end: " + "\(range.end)")
     }
@@ -22,7 +22,7 @@ class RangeParser {
     /**
      * Returns a clone of the PARAM: range instance
      */
-    public static func clone<T>(_ range:Range<T>) -> Range<T> {
+    public static func clone<T>(_ range: Range<T>) -> Range<T> {
         return Range(range.start, range.end)
     }
     /**
@@ -51,7 +51,7 @@ class RangeParser {
         else if RangeAsserter.within(b, a.start) { start = a.start }
         var end: T?
         if RangeAsserter.within(a, b.end) { end = b.end }
-        else if RangeAsserter.within(b, a.end) {end = a.end}
+        else if RangeAsserter.within(b, a.end) { end = a.end }
         return start != nil && end != nil ? start!..<end! : nil
     }
     /**
@@ -83,7 +83,7 @@ class RangeParser {
             range1 = exclusion.0
         }
         var range2: Range<T>?
-        if exclusion.1 != nil && RangeAsserter.contains(b,exclusion.1!) {
+        if exclusion.1 != nil && RangeAsserter.contains(b, exclusion.1!) {
             range2 = exclusion.1
         }
         return (range1, range2)
